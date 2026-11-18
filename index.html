@@ -3,33 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Osobné portfólio Yuriiho Hurhurova — výber digitálnych projektov a informácie o mne.">
+  <title>Portfólio — Yurii Hurhurov</title>
+  <link rel="icon" type="image/png" href="docs/ug%20rap.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <a class="wordmark" href="#domov" aria-label="Yurii Hurhurov — úvod">YH<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Otvoriť navigáciu">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Hlavná navigácia">
+      <a href="#projekty">Projekty</a>
+      <a href="#o-mne">O mne</a>
+      <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <main>
+    <section class="hero page-wrap" id="domov" aria-labelledby="hero-title">
+      <div class="hero-topline">
+        <p class="eyebrow"><span class="status-dot"></span> Dizajn · digitál · nápady</p>
+        <svg class="hero-illustration" viewBox="0 0 144 100" aria-hidden="true" focusable="false">
+          <circle cx="94" cy="49" r="36" fill="#FFFFFF" fill-opacity="0.08"/>
+          <circle cx="94" cy="49" r="25" fill="none" stroke="#DCDDDF" stroke-opacity="0.55"/>
+          <path d="M75 54c8-17 25-26 43-23M79 64c10 8 24 10 36 5" fill="none" stroke="#F0F0F0" stroke-opacity="0.85" stroke-width="1.5"/>
+          <circle cx="94" cy="49" r="4" fill="#FFFFFF"/>
+          <path d="M28 22v18m-9-9h18m-13-7 13 13m0-13L24 36" fill="none" stroke="#DCDDDF" stroke-linecap="round"/>
+          <path d="M22 75h28" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
+        </svg>
+      </div>
+      <h1 id="hero-title">Ahoj, som<br><span class="hero-name">Yurii Hurhurov.</span><br>Tvorím veci, ktoré<br>majú <span class="outlined-word">zmysel.</span></h1>
+      <div class="hero-bottom">
+        <p>Premieňam dobré nápady na premyslené digitálne zážitky. S citom pre detail a dôrazom na jednoduchosť.</p>
+        <a class="text-link" href="#projekty">Pozrieť projekty <span aria-hidden="true">↓</span></a>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 / 03</span>
+    </section>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+    <section class="projects section-wrap" id="projekty" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Vybrané práce · 2022—2025</p>
+          <h2 id="projects-title"><svg class="section-title-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>Projekty<span class="period">.</span></h2>
+        </div>
+        <p class="section-note">Malý výber mojich<br>obľúbených projektov.</p>
+      </div>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <a class="project-art" href="#kontakt">
+            <img class="project-image" src="img/brand.jpg" alt="Ukážka vizuálnej identity Forma Studio">
+          </a>
+          <div class="project-meta"><div><h3>Forma Studio</h3><p>Vizuálna identita · Web</p></div><span class="project-year">2025</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-art" href="#kontakt">
+            <img class="project-image" src="img/coffee.jpg" alt="Ukážka projektu Káva Na rohu">
+          </a>
+          <div class="project-meta"><div><h3>Káva Na rohu</h3><p>Branding · E-shop</p></div><span class="project-year">2024</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-art" href="#kontakt">
+            <img class="project-image" src="img/weekend.jpg" alt="Ukážka projektu Víkend">
+          </a>
+          <div class="project-meta"><div><h3>Víkend</h3><p>Digitálny produkt · UI/UX</p></div><span class="project-year">2023</span></div>
+        </article>
+      </div>
+      <p class="projects-footnote">* Ukážkové projekty — čoskoro tu budú tvoje vlastné.</p>
+    </section>
+
+    <section class="about section-wrap" id="o-mne" aria-labelledby="about-title">
+      <div class="about-label">
+        <p class="eyebrow">Trochu o mne</p>
+        <img class="about-photo" src="img/fotka.jpg" alt="Yurii Hurhurov">
+      </div>
+      <div class="about-copy">
+        <h2 id="about-title"><svg class="section-title-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.7-3.5 3.3-5.5 7-5.5s6.3 2 7 5.5"/></svg>Verím v dobré nápady<br>a poctivú prácu<span class="period">.</span></h2>
+        <p>Som kreatívny človek, ktorého baví hľadať krásu v jednoduchosti. Spájam dizajn, premýšľanie a zvedavosť, aby každý projekt fungoval — a zároveň dobre vyzeral.</p>
+        <p>Keď práve netvorím, pravdepodobne objavujem nové miesta, pijem dobrú kávu alebo si zapisujem ďalšie nápady.</p>
+        <a class="text-link" href="#kontakt">Poďme sa porozprávať <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer section-wrap" id="kontakt">
+    <div class="footer-main">
+      <div>
+        <p class="eyebrow">Máš zaujímavý projekt?</p>
+        <h2><svg class="section-title-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>Ozvi sa mi<span class="period">.</span></h2>
+      </div>
+      <a class="email-link" href="mailto:yuriihurhurov6@gmail.com">yuriihurhurov6@gmail.com <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="footer-bottom">
+      <a class="wordmark" href="#domov" aria-label="Yurii Hurhurov — úvod">YH<span>.</span></a>
+      <p>Navrhnuté s rozumom a kávou. <span id="current-year">2025</span></p>
+      <a class="back-top" href="#domov">Späť na začiatok ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
